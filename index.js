@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 3000;
 // List of websites to ping (including self)
 const websites = [
     "https://cron-job-3rcf.onrender.com",
-    "https://anonymous-chat-lasc.onrender.com"
+    "https://anonymous-chat-lasc.onrender.com",
+    "https://spike-coin.onrender.com"
 ];
 
 // Function to make requests to all websites
