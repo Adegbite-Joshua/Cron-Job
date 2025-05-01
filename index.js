@@ -13,8 +13,7 @@ app.use(cors({
 
 // Websites to monitor
 const websites = [
-  "https://anonymous-chat-qi7v.onrender.com",
-  "https://spike-coin.onrender.com"
+  "https://anonymous-chat-qi7v.onrender.com"
 ];
 
 // Website ping function
