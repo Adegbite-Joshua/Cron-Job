@@ -1,14 +1,13 @@
 const express = require('express');
 const axios = require('axios');
-const cron = require('node-cron');
+// const cron = require('node-cron');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// List of websites to ping (including self)
 const websites = [
-    "https://cron-job-3rcf.onrender.com",
-    "https://anonymous-chat-lasc.onrender.com",
+    // "https://cron-job-3rcf.onrender.com",
+    "https://anonymous-chat-qi7v.onrender.com/",
     "https://spike-coin.onrender.com"
 ];
 
@@ -32,7 +31,7 @@ async function pingWebsites() {
 }
 
 // Schedule the pinging every 10 minutes
-cron.schedule('*/10 * * * *', pingWebsites);
+// cron.schedule('*/10 * * * *', pingWebsites);
 
 // Basic route for self-ping
 app.get('/', (req, res) => {
